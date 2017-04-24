@@ -20,7 +20,7 @@ def array_left_rotation(a, n, k):
     return a[k:] + a[:k]
 ```
 
-[Code](Arrays - Left Rotation - Solution.py)
+[Code](Arrays_Left_Rotation_Solution.py)
 
 
 ## [Trees - Is This a Binary Search Tree](https://www.hackerrank.com/challenges/ctci-is-binary-search-tree/)
@@ -46,7 +46,7 @@ def find(arr, node):
         find(arr, node.right)
 ```
 
-[Code](Trees - Is This a Binary Search Tree - Traversal.py)
+[Code](Trees_Is_This_a_Binary_Search_Tree_Traversal.py)
 
 
 To improve efficiency, we set a max/min value for each child, so the program doesn't have to travel the full length if it's not a BST, and storing all the value into a list won't be necessary. 
@@ -62,5 +62,5 @@ def find(node, nmin, nmax):
 find(root, INT_MIN, INT_MAX)
 ```
 
-[Code](Trees - Is This a Binary Search Tree - Solution.py)
+[Code](Trees_Is_This_a_Binary_Search_Tree_Solution.py)
 
