@@ -7,7 +7,8 @@ class node:
 """
 
 def check_binary_search_tree_(root):
-    arr = find([], root)
+    arr = []
+    find(arr, root)
     for i in range(1, len(arr)):
         if arr[i - 1] >= arr[i]:
             return False
@@ -16,16 +17,8 @@ def check_binary_search_tree_(root):
 
 def find(arr, node):
     if node.left:
-        find_node(arr, node.left)
+        find(arr, node.left)
     arr += [node.data]
     if node.right:
-        find_node(arr, node.right)
-    return arr
+        find(arr, node.right)
 
-        
-def find_node(arr, node):
-    if node.left:
-        find_node(arr, node.left)
-    arr += [node.data]
-    if node.right:
-        find_node(arr, node.right)
